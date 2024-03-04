@@ -44,9 +44,10 @@ export default function ItemList({ items }: { items: EventItem[] }) {
                 <Link href={`/club/${event.club}`} key={event.club}>
                   <p>{event.club}</p>
                 </Link>
+                <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfpdxjwx2JBiiuI2wd7Rxn8o-OJysHXyBTfmx7iaS2mBnlLqg/viewform?usp=sf_link">
                 <button className="bg-primary text-primary-foreground rounded-lg p-2">
                   Register
-                </button>
+                </button></Link>
               </CardFooter>
             </Card>
           ))}

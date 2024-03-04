@@ -8,14 +8,14 @@ export function GET() {
 export const ClubItems: ClubData[] = [
     {
         id: 1,
-        name: "techdyno",
-        fullname: "TechDyno",
-        image: "http://dummyimage.com/100x100.png/dddddd/000000",
-        description: "TechDyno is a club of tech enthusiasts. We are a group of students who are passionate about technology and its applications. We are a group of students who are passionate about technology and its applications.",
+        name: "linux-club",
+        fullname: "Linux Club",
+        image: "https://media.licdn.com/dms/image/D5622AQE60SD9JuKQxA/feedshare-shrink_800/0/1707754610085?e=2147483647&v=beta&t=dcoS1H8_pjqPod38hpXBFOAaVofPaxs0qCvVU5Ydzq8",
+        description: "A club dedicated to promoting the use of Linux operating systems, open-source software, and providing support and resources for students interested in learning about Linux.",
         team: [
             {
                 id: 1,
-                name: "Web Team",
+                name: "Club Cooridinators",
                 members: [
                     {
                         reg_no: "20BCE1234",
@@ -25,28 +25,10 @@ export const ClubItems: ClubData[] = [
                     },
                     {
                         reg_no: "20BCE1235",
-                        name: "Jane Doe",
+                        name: "Jane Smith",
                         email: "test@example.com",
                         phone: 77896541230
 
-                    },
-                ],
-            },
-            {
-                id: 2,
-                name: "App Team",
-                members: [
-                    {
-                        reg_no: "20BCE1236",
-                        name: "John Doe",
-                        email: "test@example.com",
-                        phone: 77896541230
-                    },
-                    {
-                        reg_no: "20BCE1237",
-                        name: "Jane Doe",
-                        email: "test@example.com",
-                        phone: 77896541230
                     },
                 ],
             },

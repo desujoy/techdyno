@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ClubDetails({ club }: { club: ClubData }) {
   return (
     <div className="flex flex-col clubs-center justify-center">
-      <h1 className="text-3xl font-bold">{club.name}</h1>
+      <h1 className="text-3xl font-bold">{club.fullname}</h1>
       <Image src={club.image} alt={club.name} height={400} width={400} />
       <p>{club.description}</p>
       <div className="flex flex-row">

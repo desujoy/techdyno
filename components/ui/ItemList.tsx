@@ -12,11 +12,11 @@ import classes from "./ItemList.module.css";
 import Link from "next/link";
 
 export default function ItemList({ items }: { items: EventItem[] }) {
-  const upcoming = items.slice(0,4);
-  const past = items.slice(5,);
+  const upcoming = items.slice(0,3);
+  const past = items.slice(3,);
   return (
     <>
-      <h1 className="text-3xl font-bold my-4">Upcoming Events</h1>
+      <h1 className="text-3xl text-secondary font-bold my-4">Upcoming Events</h1>
       <div className={`${classes["scrolling-wrapper-flexbox"]} w-full`}>
         {!items && <p>No items found</p>}
         {items &&
@@ -31,11 +31,12 @@ export default function ItemList({ items }: { items: EventItem[] }) {
                 </CardHeader>
                 <CardContent className="flex justify-center items-center">
                   <Image
-                    src={event.image}
+                    src={`/thumbnails${event.image}`}
                     alt={event.name}
                     width={300}
                     height={300}
-                    objectFit="none"
+                    layout="fixed"
+                    objectFit="cover"
                   />
                 </CardContent>
               </Link>
@@ -50,7 +51,7 @@ export default function ItemList({ items }: { items: EventItem[] }) {
             </Card>
           ))}
       </div>
-      <h1 className="text-3xl font-bold my-4">Past Events</h1>
+      <h1 className="text-3xl text-secondary font-bold my-4">Past Events</h1>
       <div className={`${classes["scrolling-wrapper-flexbox"]} w-full`}>
         {!items && <p>No items found</p>}
         {items &&

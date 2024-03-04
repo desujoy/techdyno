@@ -7,10 +7,10 @@ export default function NavMenu() {
     <nav className="flex justify-between align-baseline items-center bg-foreground text-background">
       <Link href={"/"}>
         <Image
-          src="/logo.svg"
+          src="/logo.jpg"
           alt="logo"
-          width={40}
-          height={40}
+          width={70}
+          height={70}
           className="ml-10 mr-20"
         />
       </Link>

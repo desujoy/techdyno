@@ -123,15 +123,16 @@ export const ClubItems: ClubData[] = [
         ],
     },
 
+    
     {
-        id: 4,
-        name: "bookworms-society",
-        fullname: "Bookworms Society",
-        image: "/images/bookclub.jpg",
-        description: "If you're passionate about literature and love discussing books, this club is for you. We meet monthly to explore different genres and authors, sharing our favorite reads and insights.",
+        id: 5,
+        name: "advitya",
+        fullname: "Advitya",
+        image: "/images/advitya.jpg",
+        description: "Mohit Chauhan in VIT",
         team: [
             {
-                id: 4,
+                id: 5,
                 name: "Club Cooridinators",
                 members: [
                     {
@@ -151,4 +152,7 @@ export const ClubItems: ClubData[] = [
             },
         ],
     },
+
+   
+   
 ]

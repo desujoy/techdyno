@@ -33,11 +33,12 @@ export default function ItemList({ items }: { items: EventItem[] }) {
                     alt={event.name}
                     width={300}
                     height={300}
+                    objectFit="none"
                   />
                 </CardContent>
               </Link>
               <CardFooter className="flex justify-between items-center">
-                <Link href={`/clubs/${event.club}`} key={event.club}>
+                <Link href={`/club/${event.club}`} key={event.club}>
                   <p>{event.club}</p>
                 </Link>
                 <button className="bg-primary text-primary-foreground rounded-lg p-2">
@@ -66,11 +67,12 @@ export default function ItemList({ items }: { items: EventItem[] }) {
                     alt={item.name}
                     width={300}
                     height={300}
+                    objectFit="fill"
                   />
                 </CardContent>
               </Link>
               <CardFooter className="flex justify-between items-center">
-                <Link href={`/clubs/${item.club}`} key={item.club}>
+                <Link href={`/club/${item.club}`} key={item.club}>
                   <p>{item.club}</p>
                 </Link>
                 {/* <button className="bg-primary text-primary-foreground rounded-lg p-2">

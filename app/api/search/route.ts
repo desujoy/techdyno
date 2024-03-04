@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { searchQuery } from "@/components/definitions/search-query";
 
-const ShopItems = import("../items/route").then((module) => module.ShopItems);
+const EventItems = import("../items/route").then((module) => module.EventItems);
+const ClubItems = import("../clubs/route").then((module)=>module.ClubItems);
 export const dynamic = "force-dynamic";
 
 // fetch(`/api/search?search=${searchValue}`) should resolve
@@ -12,10 +13,15 @@ export async function GET(req: NextRequest) {
   if (!search) {
     return NextResponse.json([]);
   }
-  const filteredItems = await ShopItems.then((items) =>
+  const filteredEventItems = await EventItems.then((items) =>
     items.filter((item) =>
       item.name.toLowerCase().includes(search.toLowerCase())
     )
   );
-  return NextResponse.json(filteredItems);
+  const filteredClubItems = await ClubItems.then((items) =>
+    items.filter((item) =>
+      item.name.toLowerCase().includes(search.toLowerCase())
+    )
+  );
+  return NextResponse.json({filteredClubItems,filteredEventItems});
 }

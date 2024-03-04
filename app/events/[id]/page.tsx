@@ -17,7 +17,7 @@ export default async function ItemPage({
   const event = events.find((event) => event.id === Number(id));
   // console.log(item);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
       <ItemDetails event={event!} />
       {/* <h1>{id}</h1> */}
     </main>

@@ -13,7 +13,7 @@ import classes from "./ItemList.module.css";
 export default function ItemList({ items }: { items: ShopItem[] }) {
   return (
     <>
-      <h1 className="text-3xl font-bold">Upcoming Events</h1>
+      <h1 className="text-3xl font-bold my-4">Upcoming Events</h1>
       <div className={`${classes['scrolling-wrapper-flexbox']} w-full`}>
         {!items && <p>No items found</p>}
         {items &&
@@ -42,7 +42,7 @@ export default function ItemList({ items }: { items: ShopItem[] }) {
             </Card>
           ))}
       </div>
-      <h1 className="text-3xl font-bold">Past Events</h1>
+      <h1 className="text-3xl font-bold my-4">Past Events</h1>
       <div className={`${classes['scrolling-wrapper-flexbox']} w-full`}>
         {!items && <p>No items found</p>}
         {items &&

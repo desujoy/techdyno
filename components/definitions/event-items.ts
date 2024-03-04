@@ -4,7 +4,6 @@ export interface EventItem {
   club: string;
   description: string;
   image: string;
-  leaderboard: leaderbeard_items[];
 }
 
 interface leaderbeard_items{

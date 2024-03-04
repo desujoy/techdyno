@@ -5,7 +5,7 @@ export default function eventDetails({ event }: { event: EventItem }) {
   return (
     <div className="flex flex-col items-center justify-center">
       <h1 className="text-3xl font-bold">{event.name}</h1>
-      <Image src={event.image} alt={event.name} height={400} width={400} />
+      <Image src={event.image} alt={event.name} height={1000} width={1000} />
       <p>{event.description}</p>
       <p>${event.club}</p>
     </div>

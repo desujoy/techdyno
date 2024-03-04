@@ -1,4 +1,4 @@
-import { ShopItem } from "@/components/definitions/shop-items";
+import { ShopItem } from "@/components/definitions/event-items";
 import ItemDetails from "@/components/ui/ItemDetails";
 
 const ShopItems = import("@/app/api/items/route").then(

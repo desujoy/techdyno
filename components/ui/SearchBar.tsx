@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
-import { ShopItem } from "../definitions/shop-items";
+import { ShopItem } from "../definitions/event-items";
 import Link from "next/link";
 
 export const SearchBar = () => {

@@ -1,7 +1,7 @@
-export interface ShopItem {
+export interface EventItem {
   id: number;
   name: string;
-  price: number;
+  club: number;
   description: string;
   image: string;
 }

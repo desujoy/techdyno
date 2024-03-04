@@ -13,7 +13,7 @@ export default async function ClubPage({
   const clubs: ClubData[] = await ClubInfo;
   const club = clubs.find((club) => club.name === String(name));
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
       <ClubDetails club={club!} />
     </main>
   );

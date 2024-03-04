@@ -4,7 +4,7 @@ import { SearchBar } from "./SearchBar";
 
 export default function NavMenu() {
   return (
-    <nav className="flex justify-between items-center bg-foreground text-background">
+    <nav className="flex justify-between align-baseline items-center bg-foreground text-background">
       <Link href={"/"}>
         <Image
           src="/logo.svg"
@@ -15,14 +15,6 @@ export default function NavMenu() {
         />
       </Link>
       <SearchBar />
-      <ul className="flex space-x-4 m-4">
-        <li className="h-70 flex items-center">
-          <Link href={"/login"}>Login</Link>
-        </li>
-        <li className="h-70 flex items-center">
-          <Link href={"/register"}>Sign Up</Link>
-        </li>
-      </ul>
     </nav>
   );
 }

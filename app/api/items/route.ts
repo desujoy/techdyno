@@ -2,7 +2,7 @@ import { EventItem } from "@/components/definitions/event-items";
 import { NextResponse } from "next/server";
 
 export function GET() {
-    return NextResponse.json(EventItems);
+  return NextResponse.json(EventItems);
 }
 
 export const EventItems: EventItem[] = [

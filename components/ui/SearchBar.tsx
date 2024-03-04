@@ -28,7 +28,7 @@ export const SearchBar = () => {
   }, [searchValue]);
 
   return (
-    <div className="flex flex-col w-[70%]">
+    <div className="flex flex-col w-[70%] mr-[20%]">
       <Input
         className="w-full"
         prefix={<SearchOutlined />}

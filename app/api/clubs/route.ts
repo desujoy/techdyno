@@ -152,6 +152,35 @@ export const ClubItems: ClubData[] = [
             },
         ],
     },
+    
+    {
+        id: 6,
+        name: "photography-club",
+        fullname: "Photography Club",
+        image: "/images/bookclub.jpg",
+        description: "If you're passionate about literature and love discussing books, this club is for you. We meet monthly to explore different genres and authors, sharing our favorite reads and insights.",
+        team: [
+            {
+                id: 6,
+                name: "Club Cooridinators",
+                members: [
+                    {
+                        reg_no: "20BCE1234",
+                        name: "John Doe",
+                        email: "test@example.com",
+                        phone: 77896541230
+                    },
+                    {
+                        reg_no: "20BCE1235",
+                        name: "Jane Smith",
+                        email: "test@example.com",
+                        phone: 77896541230
+
+                    },
+                ],
+            },
+        ],
+    },
 
    
    

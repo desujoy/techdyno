@@ -43,10 +43,10 @@ export const EventItems: EventItem[] = [
   },
   {
     id: 6,
-    name: "Horseradish Root",
-    club: "",
+    name: "Photography",
+    club: "photography-club",
     description: "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpNV1wUitvWJreB56W1PCxZYSreH8Wrpd3MA&usqp=CAU",
+    image: "/images/photography.jpg",
   },
   {
     id: 7,

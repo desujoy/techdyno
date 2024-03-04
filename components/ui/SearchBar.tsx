@@ -2,14 +2,14 @@
 import React, { useEffect, useState } from "react";
 import { Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
-import { ShopItem } from "../definitions/event-items";
+import { EventItem } from "../definitions/event-items";
 import Link from "next/link";
 
 export const SearchBar = () => {
   const [searchValue, setSearchValue] = useState("");
   const [isSearching, setIsSearching] = useState(false);
   const [showLoading, setShowLoading] = useState(false);
-  const [searchResults, setSearchResults] = useState<ShopItem[]>([]);
+  const [searchResults, setSearchResults] = useState<EventItem[]>([]);
 
   useEffect(() => {
     setShowLoading(true);
